@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: rgb(245, 10, 104);
+        }
+        #container{
+            width: 80%;
+            margin:auto;
+           
+        }
+        #container>div{
+            display: flex;
+            gap: 10px;
+            justify-content: end;
+            
+        }
+        form{
+            margin: auto;
+            width: 350px;
+            height: 250px;
+            background-color: white;
+            border-radius: 4%;
+            margin-top: 10%;
+        }
+        input{
+            width: 80%;
+            
+            text-align: center;
+            margin: 5px 0;
+            align-items: center;
+            margin-left: 7%;
+        }
+        #logo{
+            margin-right: 42%;
+            margin-top: 3%;
+            padding: 20px;
+        }
+        #signIn{
+            margin-top: -2%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div >
+            <button style="border: 0px;background-color: white;width: 15%;height: 30px;">Sign Up</button>
+            <button style="border: 0px;background-color: white;width: 15%;height: 30px;"> Sign In</button>
+        </div>
+        <form id="signUp">
+            <h1 style="color: rgb(3, 3, 3);">Register Here!</h1>
+            <input type="text" id="name" placeholder="Name" required>
+            <br>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <br>
+            <input type="password" id="password" placeholder="Password" required>
+            <br>
+            <input type="password" id="passwordChk" placeholder="Re-enter Password" required>
+            <br>
+            <input style=" margin-left: 8%; background-color:rgb(255, 255, 255); " type="submit">
+            <h2 style="color: white;margin-top: 40px;">registered with!</h2>
+        </form>
+        
+        <div id = logo>
+            
+            <a class="fang" href="https://appleid.apple.com/auth/authorize?client_id=com.zee5.pwa&redirect_uri=https%3A%2F%2Fwww.zee5.com&response_type=code%20id_token&state=origin%3Aweb&scope=name%20email&response_mode=web_message&frame_id=5bbf30d0-3ae8-4031-a971-a294b015487e&m=11&v=1.5.4"><img src="https://www.zee5.com/images/apple-social-icon-circle.svg?ver=2.52.50" alt=""></a> 
+            <a class="fang" href="https://accounts.google.com/o/oauth2/auth?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.zee5.com%3Fid%3Dauth949064&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm=&include_granted_scopes=true&client_id=171585693881-93jei1bqpoaejkq5ha63iemuq8bbmoar.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.zee5.com&fetch_basic_profile=true&gsiwebsdk=2"> <img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.50.94" alt=""></a> 
+            <a class="fang" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=771609066382248&kid_directed_site=0&app_id=771609066382248&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.10%2Fdialog%2Foauth%3Fapp_id%3D771609066382248%26cbt%3D1645543554518%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df32595e0b398ed4%2526domain%253Dwww.zee5.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.zee5.com%25252Ff3c1b4a8218b1a8%2526relation%253Dopener%26client_id%3D771609066382248%26display%3Dpopup%26domain%3Dwww.zee5.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.zee5.com%252Fsignin%26locale%3Den_US%26logger_id%3Df1d180311af9ec8%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df3f8cb1d4dd7374%2526domain%253Dwww.zee5.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.zee5.com%25252Ff3c1b4a8218b1a8%2526relation%253Dopener%2526frame%253Df1d35c718a71e98%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26sdk%3Djoey%26version%3Dv2.10%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3f8cb1d4dd7374%26domain%3Dwww.zee5.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.zee5.com%252Ff3c1b4a8218b1a8%26relation%3Dopener%26frame%3Df1d35c718a71e98%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0"><img src="https://www.zee5.com/images/fb-social-icon-circle.svg?ver=2.50.94" alt=""></a>
+            <a class="fang" href="https://api.twitter.com/oauth/authenticate?oauth_token=XENwRgAAAAAA2CPSAAABfyILk34&force_login=false"><img src="https://www.zee5.com/images/twitter-social-icon.svg?ver=2.50.94" alt=""></a>
+            </div>
+        <form id="signIn">
+            
+            <h1 style="color: rgb(65, 4, 4);">Sign In!</h1>
+            <input type="email" id="email1" placeholder="E-mail" required>
+            <br>
+            <input style="margin-top: 5%;"  type="password" id="password1" placeholder="Password" required>
+            <br>
+            <input style="margin-top: 5%; margin-left: 8%;background-color:rgb(251, 251, 251); " type="submit">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    let loginBtn = document.querySelector('div>button:nth-child(2)');
+    let signUpBtn = document.querySelector('div>button:nth-child(1)');
+    let signIn = document.querySelector('#signIn');
+    let signUp = document.querySelector('#signUp');
+
+
+    signIn.style.display = 'none';
+
+    loginBtn.addEventListener('click',function(){
+       signUp.style.display = 'none';
+    
+       signIn.style.display = 'block';
+    
+    document.title = 'Sign In';
+    })
+    signUpBtn.addEventListener('click',function(){
+        signIn.style.display = 'none';
+        signUp.style.display = 'block';
+        document.title = 'Sign Up';
+
+    })
+
+    signUp.addEventListener('submit',function(event){
+        
+        event.preventDefault();
+        let username = signUp.name.value;
+        let user = signUp.email.value;
+        let password = signUp.password.value;
+       
+        if(password != signUp.passwordChk.value){
+            alert('passwords do not match!');
+        }
+        else{
+            localStorage.setItem('user',user);
+            localStorage.setItem('username',username);
+            localStorage.setItem('password',password);
+            alert('Sign Up successful!');
+           
+            signUp.reset();
+        }
+    })
+
+    signIn.addEventListener('submit',function(event){
+        event.preventDefault();
+        let user = signIn.email1.value;
+        let password = signIn.password1.value;
+        
+        let storedUser = localStorage.getItem('user');
+        let storedPassword = localStorage.getItem('password');
+
+        if(user != storedUser){
+            alert('user not found/registered!');
+        }
+        else{
+            if(password!=storedPassword){
+                alert('wrong password');
+            }
+            else{
+                alert('login successful!');
+                
+                
+                window.location.assign('./admin.html')
+            }
+        }
+    })
+</script>

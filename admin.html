@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    
+    <h1 id="heading">Admin Dashboard</h1>
+    <div id="itemEditModel">
+      <div id="itemEditModelContent">
+        <h2>Edit Products</h2>
+        <form>
+          <label class="modelLebel">Edit Product Name</label>
+          <br />
+          <input id="name" class="modelInput" type="text" value="" />
+          <br />
+          <label class="modelLebel">Edit Product Price</label>
+          <br />
+          <input id="price" class="modelInput" type="number" value="" />
+          <br />
+          <label class="modelLebel">Edit Product ImgURL</label>
+          <br />
+          <input id="imgUrl" class="modelInput" type="text" value="" />
+          <br />
+          <label class="modelLebel">ID</label>
+          <br />
+          <input id="id" class="modelInput" type="text" value="" />
+          <br />
+          <input id="editProduct" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <div id="mainContainer">
+      <div id="formSection">
+        <h2>Add Products</h2>
+        <form autocomplete="on">
+          <p>
+            <label class="formLebel">Name</label>
+            <br />
+            <input
+              id="name"
+              class="inputLabel"
+              required="required"
+              type="text"
+              placeholder="productName"
+            />
+          </p>
+          <p>
+            <label class="formLebel">Price</label>
+            <br />
+            <input
+              id="price"
+              class="inputLabel"
+              required="required"
+              type="text"
+              placeholder="productPrice"
+            />
+          </p>
+          <p>
+            <label class="formLebel">Image URL</label>
+            <br />
+            <input
+              id="imgUrl"
+              class="inputLabel"
+              required="required"
+              type="text"
+              placeholder="productImg"
+            />
+          </p>
+          <p>
+           <h3> Select Category</h3>
+            <br />
+            <select class="inputLabel">
+                <option > Select Category</option>
+              <option value="Skin">Mens fashion</option>
+              <option value="Hair">Womens fashion</option>
+              <option value="Fragrance">Gamings</option>
+              <option value="Make-up">Beuaty</option>
+              
+              <option value="Mom care">Health care</option>
+             
+            </select>
+          </p>
+          <p id="productSubmit">
+            <input id="addProductButton" type="submit" value="Add Product" />
+          </p>
+        </form>
+        <hr class="hrTag" />
+        <h2>Item limit per Page</h2>
+        <select
+          onchange="paginateProduct(1)"
+          class="inputLabel"
+          id="itemPerPage"
+        >
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+        </select>
+      </div>
+
+      <div id="tableSection">
+        <h2>Product details Table</h2>
+
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Category</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="pagebtn">
+          <button onclick="paginateProduct(1)"> 1</button>
+          <button onclick="paginateProduct(2)"> 2</button>
+          <button onclick="paginateProduct(3)"> 3</button>
+          <button onclick="paginateProduct(4)"> 4</button>
+          <button onclick="paginateProduct(5)"> 5</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./admin.js"></script>
