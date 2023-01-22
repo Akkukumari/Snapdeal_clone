@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.card,
+.card2,
+.card3 {
+    width: 23%;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 99999999;
+}
+.card2 {
+    height: 65vh;
+}
+.card.active,
+.card2.active,
+.card3.active {
+    position: fixed;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    z-index: 99999999;
+}
+.card>h2,
+.card2>h2,
+.card3>h2 {
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.card>i,
+.card3>i {
+    position: relative;
+    bottom: 38px;
+    left: 98%;
+    font-size: x-large;
+    color: gray;
+    cursor: pointer;
+}
+
+.card2>i {
+    position: relative;
+    bottom: 215px;
+    left: 98%;
+    font-size: x-large;
+    color: gray;
+    cursor: pointer;
+}
+
+.card3>p,
+.card>p:nth-child(3) {
+    color: rgb(72, 72, 72);
+    padding-bottom: 10px;
+}
+
+.card2>img {
+    width: 50%;
+    height: 200px;
+    margin-left: 50px;
+}
+
+#email,
+#mobile,
+#name,
+#dob,
+#password,
+#email_signup {
+    width: 99%;
+    height: 38px;
+    padding: 0px 10px;
+    margin: 5px 0px;
+    border: solid thin;
+    color: gray;
+}
+
+#code {
+    height: 38px;
+    padding: 0px 10px;
+    margin: 20px 50px;
+    border: solid thin;
+    color: gray;
+    text-align: center;
+}
+
+#continue,#continue_login,#continue_signup
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.8%;
+    height: 40px;
+    background-color: #E40046;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card>p,
+.card2>p,
+.card3>p:nth-child(5) {
+    text-align: center;
+    color: gray;
+}
+
+.card>button,
+.card3>button {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 93px;
+    margin-top: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card>button>img,
+.card3>button>img {
+    width: 7%;
+}
