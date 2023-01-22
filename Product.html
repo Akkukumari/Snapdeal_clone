@@ -261,7 +261,7 @@
 </html>
 
 <script>
- const url = `https://6398167e77359127a046d08d.mockapi.io/Products`;
+const url = `https://6398167e77359127a046d08d.mockapi.io/Products`;
 
 let sort=[];
 
@@ -272,13 +272,13 @@ fetch(url)
 .then((data)=>{
     sort=data;
     appendData(data)
-    console.log(data)
+    // console.log(data)
 })
 .catch((err)=>{
     console.log(err);
 })
 
-   let userdata=JSON.parse(localStorage.getItem("mens"))||[];
+   
 
    let sorteddata=document.getElementById("priceSort");
 
@@ -300,12 +300,27 @@ fetch(url)
 
        let button=document.createElement("button");
         button.innerText="Add to Cart";
+
+    button.addEventListener("click",addToCart);
+       
+        function addToCart(){
+            let userdata=JSON.parse(localStorage.getItem("mens"))||[];
+            userdata.push(e)
+       
+        //   let cart=JSON.parse(localStorage.getItem("cartItem"))||[];
+         
+         
+
+         localStorage.setItem("mens",JSON.stringify(userdata))
+          
+      
+        }
+
+       
         
         div.append(img,button,name,price);
         document.getElementById("men-products").append(div)
-        userdata.push(e)
-
-        localStorage.setItem("mens",JSON.stringify(userdata))
+       
 
         // console.log(userdata);
       })
@@ -321,7 +336,6 @@ fetch(url)
         appendData(newdata);
     }
   })
-
 </script>
 
     

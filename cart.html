@@ -7,6 +7,57 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ok</h1>
+    
 </body>
 </html>
+<script>
+    // let userdata=JSON.parse(localStorage.getItem("mens"))||[];
+    
+    //  console.log(userdata);
+
+    function appendData(data){
+
+document.getElementById("men-products").innerHTML=""
+data.map((e)=>{
+ 
+ let div=document.createElement("div");
+
+  let img=document.createElement("img");
+  img.setAttribute("src",e.avatar);
+
+  let name=document.createElement("p");
+  name.textContent=e.name
+
+  let price=document.createElement("h4");
+  price.textContent=`Rs. ${e.price}`
+
+ let button=document.createElement("button");
+  button.innerText="Add to Cart";
+
+button.addEventListener("click",addToCart);
+ 
+  function addToCart(){
+      let userdata=JSON.parse(localStorage.getItem("mens"))||[];
+      userdata.push(e)
+ 
+  //   let cart=JSON.parse(localStorage.getItem("cartItem"))||[];
+   
+   
+
+   localStorage.setItem("mens",JSON.stringify(userdata))
+    
+
+  }
+
+ 
+  
+  div.append(img,button,name,price);
+  document.getElementById("men-products").append(div)
+ 
+
+  // console.log(userdata);
+})
+}
+
+
+</script>
