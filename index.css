@@ -246,57 +246,7 @@ body {
   display: flex;
 }
 
-#list1:hover .sublists {
-  position: absolute;
-  display: block;
-  margin-top: -38px;
-  z-index: 1;
-  margin-left: 203px;
-  width: 420%;
-  height: 500px;
-  background: whitesmoke;
-}
-#list2:hover .sublists {
-  position: absolute;
-  display: block;
-  margin-top: -86px;
-  z-index: 1;
-  margin-left: 203px;
-  width: 420%;
-  height: 500px;
-  background: whitesmoke;
-}
 
-#list3:hover .sublists {
-  position: absolute;
-  display: block;
-  margin-top: -134px;
-  z-index: 1;
-  margin-left: 203px;
-  width: 420%;
-  height: 500px;
-  background: whitesmoke;
-}
-#list4:hover .sublists {
-  position: absolute;
-  display: block;
-  margin-top: -182px;
-  z-index: 1;
-  margin-left: 203px;
-  width: 420%;
-  height: 500px;
-  background: whitesmoke;
-}
-#list5:hover .sublists {
-  position: absolute;
-  display: block;
-  margin-top: -230px;
-  z-index: 1;
-  margin-left: 203px;
-  width: 420%;
-  height: 500px;
-  background: whitesmoke;
-}
 #listimg img {
   width: 100%;
 }
@@ -502,43 +452,6 @@ body {
 }
 
 /* ------2nd phase--- */
-
-.trending {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.trendhead h2 {
-  padding: 20px;
-  margin-left: 40px;
-  margin-top: 20px;
-}
-
-.trenditems {
-  width: 87%;
-  padding: 27px 13px;
-  margin: 10px 0 10px 20px;
-  cursor: pointer;
-  background-color: white;
-}
-.trenditems:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.trenditems img {
-  width: 100%;
-}
-.trenditems p {
-  font-size: 15px;
-  color: #666666;
-  padding: 5px;
-}
-
-.trenditems span i {
-  font-size: 13px;
-  padding: 4px;
-  color: gold;
-}
 
 .pricetag {
   display: flex;
