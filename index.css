@@ -515,7 +515,7 @@ body {
 
 /* ------secure-- */
 
-.secure {
+ .secure {
   margin-top: 40px;
   width: 100%;
   background-color: white;
@@ -549,11 +549,11 @@ body {
   font-size: 12px;
   color: #a4a3a3;
   margin: 2px 0;
-}
+} 
 
 /* ---footer1--- */
 
-.footer1 {
+ .footer1 {
   width: 100%;
   background-color: white;
   height: 40vh;
@@ -609,11 +609,11 @@ body {
   color: #25a8ed;
   font-size: 12px;
   cursor: pointer;
-}
+} 
 
 /* ----payment-- */
 
-.payments {
+ .payments {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -668,10 +668,10 @@ body {
 }
 .fa-cc-amex {
   color: black;
-}
+} 
 /* ---about--- */
 
-.about {
+ .about {
   width: 100%;
   padding: 40px;
 }
@@ -686,11 +686,11 @@ body {
   line-height: 24px;
   word-spacing: 1px;
   margin-top: 15px;
-}
+} 
 
 /* ---copy */
 
-.copyright {
+ .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -718,4 +718,4 @@ a {
   text-decoration: none;
 }
 
-
+ 
