@@ -5,7 +5,7 @@ addProductBtn.addEventListener("click", (event) => {
   let allProductDetails = document.querySelectorAll(".inputLabel");
   for (let i = 0; i < allProductDetails.length - 1; i++) {
     obj[allProductDetails[i].id] = allProductDetails[i].value;
-    addProductBtn.form.reload();
+    
   }
 
   
